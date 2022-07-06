@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React from 'react'
+import { Link as NavLink, Outlet } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1.2rem",
+          height:'2.8rem',
+          backgroundColor: "Black"
+        }}>
+        <div className='NavLink'>
+          {/* <NavLink to='/' > <img src={require("./imgs/ias.jpg")} width={'80px'}></img></NavLink> */}
+          <NavLink to='/contacts' className='Link'>Contacts</NavLink>
+          <NavLink to='/about' className='Link'>About IAS</NavLink>| 
+          <NavLink to='/allblogs' className='Link'>All Blogs</NavLink>| 
+        </div>
+      </nav>
+      <Outlet />
     </div>
   );
 }
