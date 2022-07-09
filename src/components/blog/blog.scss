@@ -3,7 +3,7 @@
  */
 $font: "Source Sans Pro", sans-serif;
 
-$color-alpha: #d0f2ee;
+$color-alpha: #85c4bc;
 
 $color-black: #000;
 $color-grey: #a9b1b3;
@@ -39,19 +39,21 @@ $mq-xxl: 114em;
 h1 {
   margin-top: 0;
   margin-bottom: 0.6em;
-
   font-size: 4em;
   font-weight: 900;
-  line-height: 0.9;
-}
+  line-height: 1.05;
 
+}
+h3{
+  padding: 10px;
+  margin: 10px;
+  font-weight: 900;
+  font-size:1.9em;
+}
 p {
   margin: 0;
-
   color: $color-grey;
 }
-
-
 
 figure {
   margin: 0;
@@ -66,17 +68,21 @@ figure {
   text-shadow: none;
 }
 
-.post {
-  min-height: 100vh;
-  width: 100%;
-  
-  border: 0.5em solid $color-white;
 
-  @media (min-width: $mq-md) {
-      border: 0.5em solid $color-white;
-    height: 100%;
-    min-height: 40em;
-    min-height: 100vh;
+.post {
+  border-top-right-radius:20px ;
+  border-top-left-radius: 20px;
+  width: 100%;
+  white-space: normal;
+  box-shadow: 20px -24px 51px 8px rgba(128,128,128,0.46);
+  -webkit-box-shadow: 20px -24px 51px 8px rgba(128,128,128,0.46);
+  -moz-box-shadow: 20px -24px 51px 8px rgba(128,128,128,0.46);  
+  background-color: rgba(227, 233, 227, 0.88);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+    @media (min-width: $mq-md) {
+    
     width: 60%;
     margin-left: 20%;
     margin-top: 3%;
@@ -154,23 +160,9 @@ figure {
 
   &__content {
     padding: 2em 0;
-
-   
+    
   }
-
-  &__time {
-    display: inline-block;
-    margin-bottom: 0.5em;
-
-    font-weight: 600;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
   &__header {
-   
-
     span {
       @include nth-animation-delay();
 
@@ -180,23 +172,33 @@ figure {
     }
   }
 
+  
   &__text {
-    font-weight: 300;
+    font-weight: 500;
     animation: fade-in 0.8s ease-in-out both 0.5s;
+    margin-top: 32px;
+    width: 100%;
     margin-right: 20px;
     margin-bottom: 30px;
     padding-bottom: 30px;
     line-height: 25px;
-    text-align: left;
-    color:#000;
+    left: 0px;
+    box-shadow: 20px 40px 49px 8px rgba(128,128,128,0.46);
+    -webkit-box-shadow: 20px 40px 49px 8px rgba(128,128,128,0.46);
+    -moz-box-shadow: 20px 40px 49px 8px rgba(128,128,128,0.46);
+    text-align: left;    
+    color:rgb(0, 0, 0);
+    background-color: rgba(227, 233, 227, 0.88);
+    padding: 30px;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius: 20px;
     @media (min-width: $mq-md) {
       margin-right: 500px;
-      
+      width: 60%;
+      left: 20%;
     }
     
   }
-
-
 }
 
 /**
@@ -207,7 +209,6 @@ figure {
   top: 0;
   left: 0;
   border-radius: 20px;
-  border:solid px rgb(1, 134, 243);
   height: 100%;
   width: 100%;
   background-position: 50%;

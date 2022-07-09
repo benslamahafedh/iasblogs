@@ -1,0 +1,26 @@
+.Ul_content{
+    font-size: large;
+    line-height: 60px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+.Ul_container{
+    border: solid 3px black;
+    background-color: rgba(227, 233, 227, 0.88);
+    border-radius: 5px;
+    box-shadow: 20px 40px 49px 8px rgba(128,128,128,0.46);
+    -webkit-box-shadow: 20px 40px 49px 8px rgba(128,128,128,0.46);
+    -moz-box-shadow: 20px 40px 49px 8px rgba(128,128,128,0.46);}
+#h2_Ul{
+    padding: 10px;
+    margin: 50px;
+}
+.list_item{
+    padding: 5px;
+    margin-left: 30px;
+    list-style-type:circle;
+    list-style-image: url('../../imgs/arrow-return-right.svg');
+}
